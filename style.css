@@ -1,0 +1,189 @@
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+.infoBox{
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    max-width: 60%;
+    width:60%;
+    display: flex;
+    flex-direction: column;
+}
+.logoBox{
+    max-width:30em;
+    width:30em;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.logo{
+    background: url('./images/logo.svg') no-repeat;
+    height: 2em;
+    width:8.8em;
+    padding-right: 1em;
+}
+.mobileImg{
+    display: none;
+}
+.textBox{
+    height: 30em;
+    max-width:30em;
+    width:30em;
+    margin:auto;
+    margin-top:4.5em;
+    display: flex;
+    flex-direction: column;
+}
+.topHeading{
+    font-weight: 300;
+    font-size: 4em;
+    color: hsl(0, 36%, 70%);
+    letter-spacing: 0.25em;
+    margin-bottom: -0.5em;
+}
+.secondHeading{
+    font-size:4em;
+    color: hsl(0, 6%, 24%);
+    letter-spacing: 0.25em;
+}
+.info{
+    color: hsl(0, 36%, 70%);
+    line-height: 1.8em;
+    margin-bottom: 3em;
+}
+.emailSignup{
+    height:2em;
+    width: 18em;
+    border-radius: 2em;
+    border: 1px solid hsl(0, 36%, 70%);
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
+}
+input::placeholder{
+    color:hsl(0, 36%, 70%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.8em;
+    padding-top:0.2em;
+}
+input[type = text] { 
+    color: hsl(0, 6%, 24%);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.4em;
+    padding-left: 1em;
+}
+button{
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
+    border-radius: 2em;
+    border: none;
+    height: 1.5em;
+    width:3em;
+    margin-left:-3.15em;
+    color:white;
+    font-size: 2em;
+    cursor: pointer;
+}
+button .icon{
+    background: url('./images/icon-arrow.svg') no-repeat;
+    float: right;
+    width:1.4em;
+    height:0.6em;
+}
+input, button{
+    vertical-align: middle;
+}
+
+.redBorder{
+    border: 0.1em solid red;
+    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-image: url(./images/icon-error.svg);
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: 70% 50%;
+    height:2em;
+    width: 18em;
+    border-radius: 2em;
+}
+#error {
+    text-align: left;
+    color:hsl(0, 36%, 70%);
+    font-size: 0.8em;
+    margin-top:1em;
+    margin-left:1.2em;
+}
+
+button:hover{
+    transform: scale(1.2);
+    background: hsl(0, 80%, 86%);
+    box-shadow: 0 1px 20px hsl(0, 80%, 86%), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+.image{
+    max-width: 40%;
+    width:40%;
+    height: 100vh;
+    background-image: url('./images/hero-desktop.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 600px){
+    body{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .infoBox{
+        max-width: 100%;
+        width:100%;
+    }
+    .logoBox{
+        max-width:20em;
+        width:20em;
+        margin-bottom:4em;
+        padding-left:2em;
+    }
+    .mobileImg{
+        display: flex;
+        width:375px;
+        align-self: center;
+    }
+    .image{
+        display:none;
+    }
+    .textBox{
+        height: 30em;
+        max-width:22em;
+        width:22em;
+        margin-bottom: 4.5em;
+        justify-content: center;
+        align-items: center;
+    }
+    .topHeading{
+        font-size: 3.5em;
+        text-align: center;
+    }
+    .secondHeading{
+        font-size:3.5em;
+        text-align: center;
+    }
+    .info{
+        text-align: center;
+    }
+    .emailSignup{
+        width: 13em;
+    }
+    .redBorder{
+        width: 13em;
+        background-position: 60% 50%;
+    }
+}
