@@ -100,7 +100,7 @@ button{
     font-size: 2em;
     cursor: pointer;
 }
-button .icon{
+ .icon{
     background: url('./images/icon-arrow.svg') no-repeat;
     float: right;
     width:1.4em;
@@ -189,7 +189,7 @@ button:hover{
         width:2em;
         margin-left:-2em;
     }
-    button .icon{
+    .icon{
         background: url('./images/icon-arrow.svg') no-repeat;
         float: right;
         width:0.9em;
@@ -200,6 +200,6 @@ button:hover{
     }
     .redBorder{
         width: 20em;
-        background-position: 70% 50%;
+        background-position: 75% 50%;
     }
 }
