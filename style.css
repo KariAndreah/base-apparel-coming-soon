@@ -63,14 +63,14 @@ html{
     line-height: 1.8em;
     margin-bottom: 3em;
 }
-form{
+.inputHeight{
     height: 2.5em;
     display: flex;
     align-items: flex-start;
 }
 .emailSignup{
     height:100%;
-    width: 18em;
+    width: 25em;
     border-radius: 2em;
     border: 1px solid hsl(0, 36%, 70%);
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%))
@@ -84,7 +84,7 @@ input::placeholder{
 input[type = text] { 
     color: hsl(0, 6%, 24%);
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1.4em;
+    font-size: 1em;
     padding-left: 1em;
 }
 button{
@@ -114,11 +114,11 @@ input, button{
     border: 0.1em solid red;
     background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
     background-image: url(./images/icon-error.svg);
-    background-size: 30px 30px;
+    background-size: 25px 25px;
     background-repeat: no-repeat;
-    background-position: 70% 50%;
-    height:2em;
-    width: 18em;
+    background-position: 72% 50%;
+    height:100%;
+    width: 25em;
     border-radius: 2em;
 }
 #error {
@@ -130,7 +130,6 @@ input, button{
 }
 
 button:hover{
-    transform: scale(1.2);
     background: hsl(0, 80%, 86%);
     box-shadow: 0 1px 20px hsl(0, 80%, 86%), 0 0 40px rgba(0, 0, 0, 0.1) inset;
 }
@@ -186,11 +185,21 @@ button:hover{
     .info{
         text-align: center;
     }
+    button{
+        width:2em;
+        margin-left:-2em;
+    }
+    button .icon{
+        background: url('./images/icon-arrow.svg') no-repeat;
+        float: right;
+        width:0.9em;
+        height:0.6em;
+    }
     .emailSignup{
-        width: 13em;
+        width: 20em;
     }
     .redBorder{
-        width: 13em;
-        background-position: 60% 50%;
+        width: 20em;
+        background-position: 70% 50%;
     }
 }
