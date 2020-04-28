@@ -12,7 +12,7 @@ html{
     font-size: 16px;
 }
 .infoBox{
-    background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background: url('./images/bg-pattern-desktop.svg');
     max-width: 60%;
     width:60%;
     display: flex;
@@ -86,7 +86,7 @@ button{
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
     border-radius: 2em;
     border: none;
-    height: 1.55em;
+    height: 1.6em;
     width:3em;
     margin-left:-3.15em;
     color:white;
@@ -136,7 +136,7 @@ button:hover{
     background-size: cover;
 }
 
-@media only screen and (max-width: 600px){
+@media screen and (max-width: 600px){
     body{
         flex-direction: column;
         justify-content: center;
