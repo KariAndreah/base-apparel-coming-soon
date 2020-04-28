@@ -182,8 +182,8 @@ button:hover{
     .emailSignup{
         width: 13em;
     }
-    .button{
-        height:2em;
+    button{
+        height:1.8em;
     }
     .redBorder{
         width: 13em;
