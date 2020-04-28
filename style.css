@@ -86,7 +86,7 @@ button{
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%)); 
     border-radius: 2em;
     border: none;
-    height: 1.6em;
+    height: 1.5em;
     width:3em;
     margin-left:-3.15em;
     color:white;
@@ -181,6 +181,9 @@ button:hover{
     }
     .emailSignup{
         width: 13em;
+    }
+    .button{
+        height:2em;
     }
     .redBorder{
         width: 13em;
