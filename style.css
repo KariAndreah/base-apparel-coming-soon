@@ -13,6 +13,7 @@ html{
 }
 .infoBox{
     background: url('./images/bg-pattern-desktop.svg');
+    background-color: hsl(0, 0%, 100%);
     max-width: 60%;
     width:60%;
     display: flex;
